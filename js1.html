@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <h4>Find Largest of 3</h4>
+    <script>
+        var ans;
+    
+        function findlargest(){
+          var a=parseInt( document.getElementById("num1").value);  
+          var b=parseInt( document.getElementById("num2").value);  
+          var c=parseInt( document.getElementById("num3").value);
+          if(a>b && a>c){
+            document.getElementById("mydiv").innerHTML="largest :"+a;
+          }  
+          else if(b>c){
+            document.getElementById("mydiv").innerHTML="largest :"+b;
+          }else{
+            document.getElementById("mydiv").innerHTML="largest :"+c;
+          }
+
+        }
+    </script>
+</head>
+
+<body">
+    <fieldset style="width: 450px ;">
+
+        Enter no 1 : <input type="text" id="num1" name="no" required> <br>
+        Enter no 2 : <input type="text" id="num2" name="no" required> <br>
+        Enter no 3 : <input type="text" name="no" id="num3" required> <br>
+        <button type="button" id="btn" name="btn" onclick="findlargest()">Ans</button>
+        <div id="mydiv">
+            
+        </div>
+    </fieldset>
+</body>
+
+</html>
